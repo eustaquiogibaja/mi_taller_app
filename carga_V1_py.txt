@@ -3,6 +3,7 @@ import pandas as pd from sqlalchemy import create_engine
 
 # Leer archivo CSV transformado
 df = pd.read_csv('datos_transformados.csv')
+df_2 = lectura de BD
 
 # Conectar a la base de datos (ejemplo con SQLite)
 engine = create_engine('sqlite:///ventas.db')
