@@ -4,11 +4,13 @@ import pandas as pd
 # Leer archivo CSV limpio
 df = pd.read_csv('datos_limpios.csv')
 df_oracle = pd. read.BD
+df_1 = pd.read_csv('datos_limpios.csv')
 
 # Realizar transformaciones
 df['Ventas'] = df['Cantidad'] * df['Precio']df['Fecha'] = pd.to_datetime(df['Fecha'])
-Calculo de precio de BD
+df_1 ['Ventas'] = df['Cantidad'] * df['Precio'] - IGV
+
 
 # Guardar DataFrame transformado
-df.to_csv('datos_transformados.csv', index=False)
+df_1.to_csv('datos_transformados.csv', index=False)
 
